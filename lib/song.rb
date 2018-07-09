@@ -51,5 +51,8 @@ class Song
     self.create_by_name(name)
   end
 
+  def self.destroy_all
+    self.all.clearn
+  end
 
 end
