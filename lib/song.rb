@@ -50,7 +50,6 @@ class Song
     name = filename.split(/(.mp3|-)/)[2].lstrip
     self.create_by_name(name)
 
-    binding.pry
   end
 
   def self.destroy_all
