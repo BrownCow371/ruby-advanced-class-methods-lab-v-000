@@ -47,7 +47,7 @@ class Song
   end
 
   def self.new_from_filename(filename)
-    name = filename.split(".mp3").first
+    name = filename.split(/(.mp3|-)/).first
     self.create_by_name(name)
   end
 
