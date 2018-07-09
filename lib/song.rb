@@ -51,7 +51,7 @@ class Song
     artist=filename.split(/(.mp3|-)/)[0].chop
     s = self.create_by_name(name)
     s.artist_name=artist
-    binding.pry
+    #binding.pry
   end
 
   def self.destroy_all
