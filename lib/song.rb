@@ -10,4 +10,20 @@ class Song
     self.class.all << self
   end
 
+  def self.create
+    s = self.new
+    s.save
+    s
+  end
+
+  def self.new_by_name(name)
+    s = self.new
+    s.name=name
+    s
+  end
+
+  def self.create_by_name(name)
+      s = self.new_by_name(name).save
+      s
+  end
 end
