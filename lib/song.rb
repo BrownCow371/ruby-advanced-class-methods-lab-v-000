@@ -46,6 +46,10 @@ class Song
     self.all.sort {|song1, song2| song1.name <=> song2.name }
   end
 
+  def self.new_from_filename(filename)
+    name = filename.split(".mp3").first
+    self.create_by_name(name)
+  end
 
 
 end
