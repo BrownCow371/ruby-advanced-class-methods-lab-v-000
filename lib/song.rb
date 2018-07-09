@@ -51,7 +51,7 @@ class Song
     artist=filename.split(/(.mp3|-)/)[0].chop
     s = self.new_by_name(name)
     s.artist_name=artist
-    #s
+    s
     #binding.pry
   end
 
