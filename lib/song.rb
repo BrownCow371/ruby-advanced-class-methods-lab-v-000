@@ -48,7 +48,7 @@ class Song
 
   def self.new_from_filename(filename)
     name = filename.split(/(.mp3|-)/)[2].lstrip
-    artist=filename.split(/(.mp3|-)/)[0].lstrip
+    artist=filename.split(/(.mp3|-)/)[0].chop
     s = self.create_by_name(name)
     s.artist_name=artist
   end
